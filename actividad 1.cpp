@@ -35,7 +35,7 @@ public:
      double x,nuevo;
       cout<<"ingrese el porcentaje de incremento:"<<endl;
       cin>>x;
-      nuevo=x/100*sueldo+sueldo;
+      nuevo=sueldo+(sueldo*(x/100));
       cout<<endl;
 
       cout<<"el nuevo sueldo es:"<<nuevo<<endl;
@@ -58,7 +58,7 @@ Empleado::Empleado(int _claveempleado,string _nombre,int _domicilio, double _sue
 
 int main(){
   do{
-    Empleado Jefeplanta(10,"jose",1301,20000,01);
+    Empleado Jefeplanta(10,"Pepe",1301,20000,01);
     Empleado JefePersonal(20,"Jose",1201,12000,01);
 
 
